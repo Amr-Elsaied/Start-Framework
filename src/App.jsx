@@ -22,7 +22,9 @@ const routes =createBrowserRouter([
   ]},
   
   {path:'*',element:<Notfound/>}
-])
+],{basename:"Start-Framework"
+
+});
 
 function App() {
   
