@@ -1,0 +1,194 @@
+.mainColor{
+    background-color: #2C3E50;
+}
+.mainColor2{
+    color: #2C3E50;
+}
+.secondColor{
+    background-color: #1A252F;
+}
+.homeColor{
+    background-color: #1ABC9C;
+}
+
+.line{
+    width: 80px; 
+    height: 4px;
+    background-color: white;
+}
+.lineC{
+    width: 80px; 
+    height: 4px;
+    background-color: #2C3E50;
+}
+
+.nav-item a{
+    border: 0px  solid white;
+    
+}
+.navbar { transition:all 0.5s ;
+    -webkit-transition:all 0.5s ;
+    -moz-transition:all 0.5s ;
+    -ms-transition:all 0.5s 
+    ; -o-transition:all 0.5s ;
+}
+
+.vh-98{
+    height: 98vh;
+}
+.active{
+    background-color: #1ABC9C;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.links a:hover{
+    color: #2C3E50 !important;
+    background-color: #1ABC9C;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.links a:hover i{
+color: #1A252F !important;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.form-floating .form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.form-floating .form-control::placeholder {
+    color: transparent;
+}
+
+.form-floating .form-control:focus {
+    background-color: transparent;
+    box-shadow: none; 
+    border-color: #ced4da;
+    border-width: 0 0 1px 0;
+}
+
+.form-floating > .form-control:focus ~ label {
+    color: #6c757d; 
+    transform: none;  
+} 
+
+.form-floating > .form-control:not(:placeholder-shown) {
+    border-bottom: 2px solid #1ABC9C; 
+}
+
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    color: #1ABC9C;
+    transform: scale(1.1) translateY(-1.5rem) translateX(-0.6rem);
+    -webkit-transform: scale(1.1) translateY(-1.5rem) translateX(-0.6rem);
+    -moz-transform: scale(1.1) translateY(-1.5rem) translateX(-0.6rem);
+    -ms-transform: scale(1.1) translateY(-1.5rem) translateX(-0.6rem);
+    -o-transform: scale(1.1) translateY(-1.5rem) translateX(-0.6rem);
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+.form-floating > label {
+    padding-left: 0.5rem;
+    padding-top: 1.4375rem;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+.w-95{
+    width: 96%;
+}
+
+.item {
+    cursor: pointer;
+}
+
+.overlay {
+    opacity: 0;
+    transition: all 0.5s ;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -ms-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+}
+
+.item:hover .overlay {
+    opacity: 0.9; 
+}
+
+.notfound{
+    background-image: url(../src/assets/notFound.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.notfound-h1 {
+    font-size: 10rem;
+    color: #fff;
+    font-weight: 900; 
+    line-height: 1;
+    font-family: "Quicksand", sans-serif;
+}
+
+.notfound-h2 {
+    font-size: 3rem; 
+    color: #fff;
+    font-weight: 900;
+    margin-top: -10px; 
+    font-family: "Quicksand", sans-serif;
+}
+
+.notfound-p {
+    font-size: 1.1rem;
+    color: #fff; 
+    margin-top: 1rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.notfound-b {
+    background-color: #535F6D;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    border: 2px solid white;
+    transition: all 0.5s ;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -ms-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+}
+
+.notfound-b:hover {
+    background-color: #2C3E50; 
+    color: #F5D2BB;
+    border: 2px solid #F5D2BB;
+}
+
+@media (max-width: 767px) {
+
+.notfound {
+    background-position: 10% center;
+}}
