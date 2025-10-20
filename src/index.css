@@ -187,8 +187,42 @@ color: #1A252F !important;
     border: 2px solid #F5D2BB;
 }
 
-@media (max-width: 767px) {
 
+
+.drop {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1a5bbc46;
+    z-index: 1050; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+}
+
+.o-image {
+    width: 36%;
+    object-fit: contain;
+    cursor: default;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+@media (max-width: 767px) {
 .notfound {
     background-position: 10% center;
+}
+.o-image {
+   width: 100%;
+   border-radius: 0px;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   -ms-border-radius: 0px;
+   -o-border-radius: 0px;
 }}

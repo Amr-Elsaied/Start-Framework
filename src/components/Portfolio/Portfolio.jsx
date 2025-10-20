@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect ,useState } from 'react';
 import img1 from '../../assets/poert1.png'
 import img2 from '../../assets/port2.png'
 import img3 from '../../assets/port3.png'
@@ -17,6 +17,15 @@ const cards = [
   img2,
   img3,
 ]
+const [image, setimage] = useState(null);
+
+  const close = () => {
+    setimage(null);
+  };
+
+  const click = (e) => {
+    e.stopPropagation();
+  };
 
 
   return (
@@ -33,7 +42,7 @@ const cards = [
   {cards.map((img, index) => {
 return (
     <div key={index} className='col-md-4 pt-3'>
-    <div className='position-relative item rounded-3 overflow-hidden'>
+    <div className='position-relative item rounded-3 overflow-hidden' onClick={() => setimage(img)}>
     <img className='w-100 rounded-3' src={img} alt={`portfolio ${index+1}`} />
     <div className='overlay position-absolute top-0 bottom-0 end-0 start-0 d-flex justify-content-center align-items-center'style={{ backgroundColor: 'rgba(26, 188, 156, 0.9)' }} >
     <i className="fa-solid fa-plus fa-6x text-white"></i>
@@ -44,7 +53,9 @@ return (
   </div>
   </div>
 </div>
-      
-    </>
-  )
-}
+{image && (<div className="drop" onClick={close}>
+  <img src={image} alt="portfolio" className="o-image"onClick={click}/>
+  </div>
+)}
+</>
+)}
