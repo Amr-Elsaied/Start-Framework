@@ -219,10 +219,10 @@ color: #1A252F !important;
     background-position: 10% center;
 }
 .o-image {
-   width: 100%;
-   border-radius: 0px;
-   -webkit-border-radius: 0px;
-   -moz-border-radius: 0px;
-   -ms-border-radius: 0px;
-   -o-border-radius: 0px;
+    width: 100%;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
 }}
