@@ -20,9 +20,8 @@ const routes =createBrowserRouter([
     {path:'portfolio',element:<Portfolio/>},
     {path:'contact',element:<Contact/>},
   ]},
-  
   {path:'*',element:<Notfound/>}
-]);
+],{ basename: "/Start-Framework" });
 
 function App() {
   
